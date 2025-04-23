@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kết quả dự đoán</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleresult.css') }}">
+</head>
+<body>
+    <div class="result-box">
+        <h2 class="safe">✅ {{ request.form['name'] }}, bạn có NGUY CƠ THẤP mắc bệnh tim</h2>
+        <p>Xác suất dự đoán: <strong>{{ prob }}%</strong></p>
+        <a href="/"> Dự đoán lại</a>
+    </div>
+</body>
+</html>

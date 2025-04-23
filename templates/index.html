@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Đoán Bệnh Tim Mạch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>DỰ ĐOÁN BỆNH TIM MẠCH</h1>
+    <p>Please enter the following details to predict heart disease:</p>
+    
+    <form action="/index" method="POST">
+        <!-- Name Input -->
+        <label for="name">Tên:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Age Input -->
+        <label for="Age">Tuổi: 18 - 80 </label>
+        <input type="text" id="Age" name="Age" required><br><br>
+
+        <!-- Sleep Hours Input -->
+        <label for="Sleep Hours">Số giờ ngủ: 4 - 10</label>
+        <input type="text" id="Sleep Hours" name="Sleep Hours" required><br><br>
+
+        <!-- BMI Input -->
+        <label for="BMI">Chỉ số khối cơ thể:18 - 40 </label>
+        <input type="text" id="BMI" name="BMI" required><br><br>
+
+        <!-- Homocysteine Level Input -->
+        <label for="Homocysteine Level">Mức Homocysteine:5 - 20</label>
+        <input type="text" id="Homocysteine Level" name="Homocysteine Level" required><br><br>
+
+        <!-- Cholesterol Level Input -->
+        <label for="Cholesterol Level">Mức Cholesterol:150-300</label>
+        <input type="text" id="Cholesterol Level" name="Cholesterol Level" required><br><br>
+
+        <!-- Blood Pressure Input -->
+        <label for="Blood Pressure">Huyết Áp:120- 180</label>
+        <input type="text" id="Blood Pressure" name="Blood Pressure" required><br><br>
+
+        <!-- Stress Level Input -->
+        <label for="Stress Level">Mức độ căng thẳng:</label>
+        <select id="Stress Level" name="Stress Level" required>
+            <option value="cao">Cao</option>
+            <option value="thap">Thấp</option>
+            <option value="tb">Trung bình</option>
+        </select><br><br>
+
+        <!-- Triglyceride Level Input -->
+        <label for="Triglyceride Level">Chất béo trung bình:100 - 400</label>
+        <input type="text" id="Triglyceride Level" name="Triglyceride Level" required><br><br>
+
+
+        <!-- CRP Level Input -->
+        <label for="CRP Level">Mức độ C-Reactive Protein:0-15</label>
+        <input type="text" id="CRP Level" name="CRP Level" required><br><br>
+
+        
+        <!-- Fasting Blood Sugar Input -->
+        <label for="Fasting Blood Sugar">Chỉ số đường huyết lúc đói:80-160</label>
+        <input type="text" id="Fasting Blood Sugar" name="Fasting Blood Sugar" required><br><br>
+        
+        <!-- Submit Button -->
+        <button type="submit">Dự Đoán</button>
+    </form>
+</body>
+</html>

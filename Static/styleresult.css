@@ -1,0 +1,60 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("/static/background.jpg"); /* 👉 Bà đổi tên ảnh theo ý */
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.result-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #00c853;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #00b248;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tùy chỉnh theo trạng thái */
+.danger {
+    color: #ff5252;
+}
+
+.safe {
+    color: #00e676;
+}
